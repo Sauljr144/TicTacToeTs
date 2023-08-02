@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Square = () => {
+interface mySquares{
+  value: any,
+  onSquareClick: () => void,
+}
+
+const Square = ({value, onSquareClick}:mySquares) => {
   return (
-    <div>Square</div>
+      <button className="square" onClick={onSquareClick}>{value}</button>
   )
 }
 
