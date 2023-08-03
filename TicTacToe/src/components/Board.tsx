@@ -2,9 +2,9 @@ import React from 'react'
 import Square from './Square'
 
 interface myBoard{
-  xIsNext: any,
-  squares: any,
-  onPlay: any
+  xIsNext: boolean,
+  squares: string[],
+  onPlay: ([]) => void
 }
 
 
@@ -21,7 +21,7 @@ const Board = ({xIsNext, squares, onPlay}:myBoard) => {
 
   }
 
-  function calculateWinner(squares:[]){
+  function calculateWinner(squares:string[]){
   
     const lines = [
       [0, 1, 2],
