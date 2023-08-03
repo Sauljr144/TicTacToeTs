@@ -13,7 +13,7 @@ const Game = () => {
         setCurrentMove(nextHistory.length - 1)
     }
 
-    function jumpTo(nextMove: any){
+    function jumpTo(nextMove: number){
       setCurrentMove(nextMove);
     }
 
